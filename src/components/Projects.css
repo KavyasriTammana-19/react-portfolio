@@ -1,0 +1,13 @@
+.project-card {
+  border: 2px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(to right, #0d6efd, #6610f2) border-box;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #6610f2aa;
+  border: 2px solid transparent;
+}
