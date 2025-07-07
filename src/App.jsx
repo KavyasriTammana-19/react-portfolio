@@ -12,6 +12,7 @@ import BackToTop from './components/BackToTop';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import SocialLinks from './components/SocialLinks';
+import Experience from './components/Experience';
 
 function App() {
 
@@ -26,11 +27,13 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Experience/>
       <Projects/>
       <Contact/>
       <BackToTop/>
       <Footer/>
       <SocialLinks/>
+      
       
       {/* We will add Home, About, etc. here next */}
     </>

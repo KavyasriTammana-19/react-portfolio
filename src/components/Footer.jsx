@@ -15,6 +15,7 @@ const Footer = () => {
             <a href="#about" className="text-white mx-2">About</a>
             <a href="#projects" className="text-white mx-2">Projects</a>
             <a href="#contact" className="text-white mx-2">Contact</a>
+            <a href="#experience" className="text-white mx-2">Experience</a>
           </Col>
           <Col md={4} className="text-md-end text-center">
             <a href="https://www.linkedin.com/in/kavyasri-tammana-75355b333" target="_blank" rel="noreferrer" className="text-white mx-2"><FaLinkedin /></a>
