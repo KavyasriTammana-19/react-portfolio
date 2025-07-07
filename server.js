@@ -2,10 +2,12 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
 
-
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: "https://kavyasritammanaportfolio.netlify.app"
+}));
 
 app.post("/send", async (req, res) => {
   const { name, email, message } = req.body;
@@ -13,14 +15,14 @@ app.post("/send", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "kavyasritammananvs@gmail.com",    
-      pass: "uyxu ugsv mhft ufrk",        
+      user: "kavyasritammananvs@gmail.com",
+      pass: "uyxu ugsv mhft ufrk",
     },
   });
 
   const mailOptions = {
     from: email,
-    to: "kavyasritammananvs@gmail.com",         
+    to: "kavyasritammananvs@gmail.com",
     subject: `New Message from Portfolio - ${name}`,
     text: `
       Name: ${name}
